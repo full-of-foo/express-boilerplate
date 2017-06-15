@@ -11,17 +11,25 @@ Just enough boilerplate to get you meaningfully going with Express 4+. The tooli
 
 Clone the repo, `cd` into it and run:
 
-```find . -type f | xargs sed -i  's/express-boilerplate/YOUR-APP-NAME/g'```
+```
+find . -type f | xargs sed -i  's/express-boilerplate/YOUR-APP-NAME/g'
+```
 
 Build and run the application with:
+
 ```
-docker build -t express-boilerplate . && docker run -it -p 8080:8080 express-boilerplate app```
+docker build -t express-boilerplate . && docker run -it -p 8080:8080 express-boilerplate app
+```
 
 We can visit the API with:
+
 ```
 $ curl http://localhost:8080/api
-{"version":"0.0.1","env":"development"}```
+{"version":"0.0.1","env":"development"}
+```
 
 ## Testing
+
 ```
-docker build -t express-boilerplate . && docker run express-boilerplate app```
+docker build -t express-boilerplate . && docker run express-boilerplate app
+```
